@@ -11,9 +11,11 @@ import RaffleForm from "../components/RaffleForm.vue";
 <template>
     <Navbar />
     <Header />
-    <CountdownTimer />
-    <Categories />
-    <Offer />
-    <RaffleForm />
+    <main>
+        <CountdownTimer />
+        <Categories />
+        <Offer />
+        <RaffleForm />
+    </main>
     <Footer />
 </template>
