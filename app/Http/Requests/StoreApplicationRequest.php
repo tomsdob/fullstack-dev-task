@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\MaxWordCount;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreApplicationRequest extends FormRequest
@@ -13,18 +14,19 @@ class StoreApplicationRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, mixed>
+     * @return array<string>
      */
     public function rules()
     {
         return [
-            //
+            'name' => ['required', 'string', 'max:255', new MaxWordCount(4)],
+            'email' => ['required', 'email', 'unique:applications', 'max:255']
         ];
     }
 }
