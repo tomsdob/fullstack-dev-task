@@ -1,7 +1,26 @@
 <template>
-    <nav class="p-4">
+    <nav class="px-4 py-[13px] sm:py-4">
         <div class="max-w-[1140px] mx-auto flex justify-between items-center">
-            <a class="h-[38px]" href="#" title="Latvijas Mobilais Telefons">
+            <button>
+                <svg
+                    width="22"
+                    height="11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M1 10h20M1 1h20"
+                        stroke="#F6F6F6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </button>
+            <a
+                class="h-[33px] sm:h-[38px]"
+                href="#"
+                title="Latvijas Mobilais Telefons"
+            >
                 <img
                     class="h-full"
                     src="https://lmt.mstatic.lv/lmt/images/mobile/logo_mobile.svg"
@@ -11,16 +30,15 @@
             <ul
                 class="flex items-center -mx-4 text-sm leading-none text-brand-light-gray"
             >
-                <li class="mx-4">
+                <li class="hidden mx-4 sm:block">
                     <a
                         class="flex items-center transition duration-200 hover:text-brand-red"
                         href="#"
                         title="Meklēt"
                     >
                         <svg
-                            class="mr-[5px]"
-                            width="20"
-                            height="20"
+                            class="mr-[5px] w-7 h-7 sm:w-4 sm:h-4"
+                            viewBox="0 0 20 20"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -34,16 +52,15 @@
                         <span>Meklēt</span>
                     </a>
                 </li>
-                <li class="mx-4">
+                <li class="hidden mx-4 sm:block">
                     <a
                         class="flex items-center transition duration-200 hover:text-brand-red"
                         href="#"
                         title="Palīdzība"
                     >
                         <svg
-                            class="mr-[5px]"
-                            width="20"
-                            height="20"
+                            class="mr-[5px] w-7 h-7 sm:w-4 sm:h-4"
+                            viewBox="0 0 20 20"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -64,9 +81,8 @@
                         title="Autorizēties"
                     >
                         <svg
-                            class="mr-[5px]"
-                            width="20"
-                            height="20"
+                            class="mr-[5px] w-7 h-7 sm:w-4 sm:h-4"
+                            viewBox="0 0 20 20"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -77,7 +93,7 @@
                                 stroke-linejoin="round"
                             />
                         </svg>
-                        <span>Autorizēties</span>
+                        <span class="hidden sm:block">Autorizēties</span>
                     </a>
                 </li>
             </ul>

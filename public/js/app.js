@@ -19778,10 +19778,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "pb-[100px] px-4"
+  "class": "pb-[68px] sm:b-[100px] px-4"
 };
 var _hoisted_2 = {
-  "class": "max-w-[1140px] mx-auto grid grid-cols-4 gap-[30px]"
+  "class": "max-w-[1140px] mx-auto grid grid-cols-1 sm:grid-cols-4 gap-2.5 sm:gap-[30px]"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_CategoryItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CategoryItem");
@@ -19828,17 +19828,17 @@ var _hoisted_7 = {
   "class": "text-lg leading-none text-brand-light-gray"
 };
 var _hoisted_8 = {
-  "class": "flex items-center justify-center ml-8"
+  "class": "flex items-center justify-center ml-[26px] sm:ml-8"
 };
 var _hoisted_9 = ["src", "alt"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [$setup.category.type === 'normal' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", {
     key: 0,
-    "class": "w-full items-center grid grid-cols-2 hover:bg-brand-gray transition duration-200 py-[22px] border border-brand-gray rounded-[5px]",
+    "class": "w-full items-center grid grid-cols-2 hover:bg-brand-gray transition duration-200 py-[21px] border border-brand-gray rounded-[5px]",
     href: "#",
     title: $setup.category.name
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    "class": "h-[38px]",
+    "class": "h-[36px] sm:h-[38px]",
     src: $setup.category.icon,
     alt: $setup.category.name
   }, null, 8
@@ -19849,7 +19849,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , _hoisted_1)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $setup.category.type === 'filled' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", {
     key: 1,
-    "class": "bg-brand-bright-red w-full items-center flex justify-center py-[22px] border border-brand-bright-red rounded-[5px]",
+    "class": "bg-brand-bright-red w-full items-center flex justify-center py-[27px] border border-brand-bright-red rounded-[5px]",
     href: "#",
     title: $setup.category.name
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.category.name), 1
@@ -19883,10 +19883,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-4 py-14"
+  "class": "px-4 py-[42px] sm:py-14"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-[1140px] mx-auto flex items-center justify-center\"><div class=\"text-brand-red text-center mr-[88px]\"><span class=\"block mb-[9px] text-[50px] font-bold leading-[40px]\"> 20 </span><span class=\"block text-sm leading-none\">dienas</span></div><div class=\"flex items-start -mx-5\"><div class=\"mx-5 text-center text-white\"><span class=\"block mb-[9px] text-[50px] font-bold leading-[40px]\"> 14 </span><span class=\"block text-sm leading-none\">stundas</span></div><div class=\"mx-5 text-center text-white\"><span class=\"block mb-[9px] text-[40px] font-bold leading-[32px]\"> : </span></div><div class=\"mx-5 text-center text-white\"><span class=\"block mb-[9px] text-[50px] font-bold leading-[40px]\"> 02 </span><span class=\"block text-sm leading-none\">minūtes</span></div><div class=\"mx-5 text-center text-white\"><span class=\"block mb-[9px] text-[40px] font-bold leading-[32px]\"> : </span></div><div class=\"mx-5 text-center text-white\"><span class=\"block mb-[9px] text-[50px] font-bold leading-[40px]\"> 48 </span><span class=\"block text-sm leading-none\">sekundes</span></div></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-[1140px] mx-auto flex items-center justify-center\"><div class=\"text-brand-red text-center mr-[50px] sm:mr-[88px]\"><span class=\"block mb-[7px] sm:mb-[9px] text-[40px] sm:text-[50px] font-bold leading-[40px]\"> 20 </span><span class=\"block text-sm leading-none\">dienas</span></div><div class=\"flex items-start -mx-2.5 sm:-mx-5\"><div class=\"mx-2.5 sm:mx-5 text-center text-white\"><span class=\"block mb-[7px] sm:mb-[9px] text-[40px] sm:text-[50px] font-bold leading-[40px]\"> 14 </span><span class=\"block text-sm leading-none\">stundas</span></div><div class=\"mx-2.5 sm:mx-5 text-center text-white\"><span class=\"block mb-[7px] sm:mb-[9px] text-[30px] sm:text-[40px] font-bold leading-[32px]\"> : </span></div><div class=\"mx-2.5 sm:mx-5 text-center text-white\"><span class=\"block mb-[7px] sm:mb-[9px] text-[40px] sm:text-[50px] font-bold leading-[40px]\"> 02 </span><span class=\"block text-sm leading-none\">minūtes</span></div><div class=\"mx-2.5 sm:mx-5 text-center text-white\"><span class=\"block mb-[7px] sm:mb-[9px] text-[30px] sm:text-[40px] font-bold leading-[32px]\"> : </span></div><div class=\"mx-2.5 sm:mx-5 text-center text-white\"><span class=\"block mb-[7px] sm:mb-[9px] text-[40px] sm:text-[50px] font-bold leading-[40px]\"> 48 </span><span class=\"block text-sm leading-none\">sekundes</span></div></div></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache) {
@@ -19909,7 +19909,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "py-[49px] px-4"
+  "class": "py-5 sm:py-[49px] px-4"
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -19941,7 +19941,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-4 h-[400px] mx-auto max-w-[1440px] flex items-center bg-[url('/images/header_image.png')] bg-cover bg-center bg-no-repeat"
+  "class": "px-4 h-[445px] sm:h-[400px] pb-[49px] sm:pb-0 mx-auto max-w-[1440px] flex items-end sm:items-center bg-[url('/images/header_image_mobile.png')] sm:bg-[url('/images/header_image.png')] bg-cover bg-center bg-no-repeat"
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -19949,9 +19949,9 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "max-w-md text-white"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "font-bold text-5xl mb-[50px]"
+  "class": "font-bold text-[32px] sm:text-5xl mb-[30px] sm:mb-[50px]"
 }, " Melnā piektdiena tikai 27. novembrī "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-2xl"
+  "class": "text-base sm:text-2xl"
 }, "Kur skaties - tur atlaides!")])], -1
 /* HOISTED */
 );
@@ -19977,10 +19977,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "p-4"
+  "class": "px-4 py-[13px] sm:py-4"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-[1140px] mx-auto flex justify-between items-center\"><a class=\"h-[38px]\" href=\"#\" title=\"Latvijas Mobilais Telefons\"><img class=\"h-full\" src=\"https://lmt.mstatic.lv/lmt/images/mobile/logo_mobile.svg\" alt=\"Latvijas Mobilais Telefons\"></a><ul class=\"flex items-center -mx-4 text-sm leading-none text-brand-light-gray\"><li class=\"mx-4\"><a class=\"flex items-center transition duration-200 hover:text-brand-red\" href=\"#\" title=\"Meklēt\"><svg class=\"mr-[5px]\" width=\"20\" height=\"20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9.222 15.444A6.222 6.222 0 1 0 9.222 3a6.222 6.222 0 0 0 0 12.444ZM17 17l-3.111-3.11\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><span>Meklēt</span></a></li><li class=\"mx-4\"><a class=\"flex items-center transition duration-200 hover:text-brand-red\" href=\"#\" title=\"Palīdzība\"><svg class=\"mr-[5px]\" width=\"20\" height=\"20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M2 5a2 2 0 0 1 2-2h2.8A3.2 3.2 0 0 1 10 6.2v11.2A2.4 2.4 0 0 0 7.6 15H4a2 2 0 0 1-2-2V5ZM18 5a2 2 0 0 0-2-2h-2.8A3.2 3.2 0 0 0 10 6.2v11.2a2.4 2.4 0 0 1 2.4-2.4H16a2 2 0 0 0 2-2V5Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><span>Palīdzība</span></a></li><li class=\"mx-4\"><a class=\"flex items-center transition duration-200 hover:text-brand-red\" href=\"#\" title=\"Autorizēties\"><svg class=\"mr-[5px]\" width=\"20\" height=\"20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17 16.434v-1.625a3.25 3.25 0 0 0-3.25-3.25h-6.5A3.25 3.25 0 0 0 4 14.809v1.625M10.5 8.5a3.25 3.25 0 1 0 0-6.5 3.25 3.25 0 0 0 0 6.5Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><span>Autorizēties</span></a></li></ul></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-[1140px] mx-auto flex justify-between items-center\"><button><svg width=\"22\" height=\"11\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1 10h20M1 1h20\" stroke=\"#F6F6F6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button><a class=\"h-[33px] sm:h-[38px]\" href=\"#\" title=\"Latvijas Mobilais Telefons\"><img class=\"h-full\" src=\"https://lmt.mstatic.lv/lmt/images/mobile/logo_mobile.svg\" alt=\"Latvijas Mobilais Telefons\"></a><ul class=\"flex items-center -mx-4 text-sm leading-none text-brand-light-gray\"><li class=\"hidden mx-4 sm:block\"><a class=\"flex items-center transition duration-200 hover:text-brand-red\" href=\"#\" title=\"Meklēt\"><svg class=\"mr-[5px] w-7 h-7 sm:w-4 sm:h-4\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9.222 15.444A6.222 6.222 0 1 0 9.222 3a6.222 6.222 0 0 0 0 12.444ZM17 17l-3.111-3.11\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><span>Meklēt</span></a></li><li class=\"hidden mx-4 sm:block\"><a class=\"flex items-center transition duration-200 hover:text-brand-red\" href=\"#\" title=\"Palīdzība\"><svg class=\"mr-[5px] w-7 h-7 sm:w-4 sm:h-4\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M2 5a2 2 0 0 1 2-2h2.8A3.2 3.2 0 0 1 10 6.2v11.2A2.4 2.4 0 0 0 7.6 15H4a2 2 0 0 1-2-2V5ZM18 5a2 2 0 0 0-2-2h-2.8A3.2 3.2 0 0 0 10 6.2v11.2a2.4 2.4 0 0 1 2.4-2.4H16a2 2 0 0 0 2-2V5Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><span>Palīdzība</span></a></li><li class=\"mx-4\"><a class=\"flex items-center transition duration-200 hover:text-brand-red\" href=\"#\" title=\"Autorizēties\"><svg class=\"mr-[5px] w-7 h-7 sm:w-4 sm:h-4\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17 16.434v-1.625a3.25 3.25 0 0 0-3.25-3.25h-6.5A3.25 3.25 0 0 0 4 14.809v1.625M10.5 8.5a3.25 3.25 0 1 0 0-6.5 3.25 3.25 0 0 0 0 6.5Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><span class=\"hidden sm:block\">Autorizēties</span></a></li></ul></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache) {
@@ -20003,40 +20003,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-4 pb-[93px]"
+  "class": "px-4 pb-[60px] sm:pb-[93px]"
 };
 var _hoisted_2 = {
   "class": "mx-auto max-w-[1140px]"
 };
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-  "class": "mb-10 text-4xl font-bold text-white"
+  "class": "mb-[30px] sm:mb-10 text-[32px] font-bold text-center text-white sm:text-left"
 }, " Īpašs piedāvājums tikai piektdien! ", -1
 /* HOISTED */
 );
 
 var _hoisted_4 = {
-  "class": "items-center grid grid-cols-3 gap-[80px] mb-[36px] w-full bg-brand-gray/50 rounded-[5px] px-[70px] py-[35px]"
+  "class": "items-center grid grid-cols-1 sm:grid-cols-3 gap-[36px] sm:gap-[80px] sm:mb-[36px] w-full bg-brand-gray/50 rounded-[5px] px-[19px] sm:px-[70px] py-[28px] sm:py-[35px]"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex flex-col items-start justify-center\"><p class=\"mb-1.5 text-[26px] leading-[34px] font-bold text-white text-center\"> LMT Viedtelevīzija + HBO filmas un seriāli </p><div class=\"w-full mb-[14px] flex justify-center\"><img class=\"max-w-full\" src=\"/images/media/device.png\" alt=\"Device\" title=\"Device\"></div><div class=\"flex items-center justify-between w-full\"><div class=\"mr-8\"><p class=\"mb-2.5 leading-none text-brand-dark-gray\"> Iepriekš 24,99€/mēn </p><div class=\"relative text-white\"><span class=\"text-[62px] leading-none\"> 19 <sup class=\"left-[-8px] top-[-22px] text-[32px]\"> 98 </sup></span><span class=\"absolute bottom-[6px] right-[-18px] font-medium leading-none transform -translate-x-1/2\"> €/mēn.* </span></div></div><a class=\"px-5 py-[18px] border hover:bg-brand-red hover:text-white transition duration-200 border-brand-red rounded-[5px] flex items-center text-brand-red\" href=\"#\" title=\"Vairāk\"> Vairāk <svg class=\"ml-2\" width=\"24\" height=\"24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5 12.435h14M12 5.436l7 7-7 7\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a></div></div>", 1);
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex flex-col items-start justify-center\"><p class=\"mb-[14px] sm:mb-1.5 text-[24px] leading-[34px] font-bold text-white text-center\"> LMT Viedtelevīzija + HBO filmas un seriāli </p><div class=\"w-full mb-[12px] sm:mb-[14px] flex justify-center\"><img class=\"max-w-full\" src=\"/images/media/device.png\" alt=\"Device\" title=\"Device\"></div><div class=\"flex items-center justify-between w-full\"><div class=\"mr-8\"><p class=\"mb-2 sm:mb-2.5 leading-none text-brand-dark-gray\"> Iepriekš 24,99€/mēn </p><div class=\"relative text-white\"><span class=\"text-[62px] leading-none\"> 19 <sup class=\"left-[-8px] top-[-22px] text-[32px]\"> 98 </sup></span><span class=\"absolute bottom-[6px] right-[-18px] font-medium leading-none transform -translate-x-1/2\"> €/mēn.* </span></div></div><a class=\"px-4 sm:px-5 py-2.5 sm:py-[18px] border hover:bg-brand-red hover:text-white transition duration-200 border-brand-red rounded-[5px] flex items-center text-brand-red\" href=\"#\" title=\"Vairāk\"> Vairāk <svg class=\"ml-2\" width=\"24\" height=\"24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5 12.435h14M12 5.436l7 7-7 7\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a></div></div>", 1);
 
 var _hoisted_6 = {
-  "class": "grid grid-cols-4 col-span-2 gap-3"
+  "class": "grid grid-cols-3 sm:grid-cols-4 col-span-1 sm:col-span-2 gap-2.5 sm:gap-3"
 };
 var _hoisted_7 = ["title"];
 var _hoisted_8 = ["src", "alt"];
 
 var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-lg leading-none text-brand-light-gray/50"
+  "class": "hidden text-lg leading-none text-brand-light-gray/50 sm:block"
 }, " Akcija 29.11.2019. Piedāvājums attiecas uz noteiktām preču kategorijām. Piedāvājums neattiecas uz citu akciju precēm. ", -1
 /* HOISTED */
 );
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.medias, function (media) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.medias, function (media, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", {
-      "class": "h-[200px] w-full rounded-[5px]",
+      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["h-[132px] sm:h-[200px] w-full rounded-[5px]", {
+        'hidden sm:block': index > 2
+      }]),
       href: "#",
       title: media.name
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
@@ -20045,8 +20047,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       alt: media.name
     }, null, 8
     /* PROPS */
-    , _hoisted_8)], 8
-    /* PROPS */
+    , _hoisted_8)], 10
+    /* CLASS, PROPS */
     , _hoisted_7);
   }), 256
   /* UNKEYED_FRAGMENT */
@@ -20069,10 +20071,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-4 bg-white pt-[70px] pb-[164px]"
+  "class": "px-4 bg-white pt-10 sm:pt-[70px] pb-[77px] sm:pb-[164px]"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-[1140px] mx-auto\"><h3 class=\"text-4xl font-bold text-brand-gray mb-[70px]\"> Pieteikties konkursam! </h3><form class=\"flex -mx-2.5 items-end\"><div class=\"mx-2.5\"><label class=\"block mb-2 text-sm leading-none text-brand-medium-gray\" for=\"name\"> Vārds, uzvārds </label><input class=\"px-6 py-5 leading-none rounded-[5px] text-brand-medium-gray bg-brand-light-gray border-brand-light-normal-gray border\" type=\"text\" placeholder=\"Vārds, uzvārds\"></div><div class=\"mx-2.5\"><label class=\"block mb-2 text-sm leading-none text-brand-medium-gray\" for=\"name\"> E-pasta adrese </label><input class=\"px-6 py-5 leading-none rounded-[5px] text-brand-medium-gray bg-brand-light-gray border-brand-light-normal-gray border\" type=\"email\" placeholder=\"E-pasta adrese\"></div><button class=\"bg-brand-red mx-2.5 flex items-center text-white rounded-[5px] px-8 py-[18px]\"> Nosūtīt <svg class=\"ml-2\" width=\"20\" height=\"20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M3 10h14M10 3l7 7-7 7\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button></form></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-[1140px] mx-auto\"><h3 class=\"text-[32px] sm:text-4xl font-bold text-brand-gray mb-[39px] sm:mb-[70px]\"> Pieteikties konkursam! </h3><form class=\"flex sm:-mx-2.5 sm:items-end sm:flex-row flex-col\"><div class=\"sm:mx-2.5 mb-[30px] sm:mb-0\"><label class=\"block mb-2 text-sm leading-none text-brand-medium-gray\" for=\"name\"> Vārds, uzvārds </label><input class=\"w-full sm:w-auto px-6 py-5 leading-none rounded-[5px] text-brand-medium-gray bg-brand-light-gray border-brand-light-normal-gray border\" type=\"text\" placeholder=\"Vārds, uzvārds\"></div><div class=\"sm:mx-2.5 mb-[40px] sm:mb-0\"><label class=\"block mb-2 text-sm leading-none text-brand-medium-gray\" for=\"name\"> E-pasta adrese </label><input class=\"w-full sm:w-auto px-6 py-5 leading-none rounded-[5px] text-brand-medium-gray bg-brand-light-gray border-brand-light-normal-gray border\" type=\"email\" placeholder=\"E-pasta adrese\"></div><button class=\"bg-brand-red sm:mx-2.5 flex items-center justify-center sm:justify-start text-white rounded-[5px] px-8 py-[18px]\"> Nosūtīt <svg class=\"ml-2\" width=\"20\" height=\"20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M3 10h14M10 3l7 7-7 7\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button></form></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache) {
