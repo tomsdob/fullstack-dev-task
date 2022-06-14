@@ -2,7 +2,12 @@
 
 ### Copy the .env.example file
 ```bash
-cp env.example .env
+cp .env.example .env
+```
+
+### Start up the application
+```bash
+./vendor/bin/sail up 
 ```
 
 ### Generate an app key
@@ -15,9 +20,9 @@ cp env.example .env
 ./vendor/bin/sail artisan migrate
 ```
 
-### Start up the application
-```bash
-./vendor/bin/sail up 
+### Access the application
+```
+localhost
 ```
 
 ### Database credentials
