@@ -10,7 +10,7 @@
           href="{{ mix('css/app.css') }}">
 </head>
 
-<body class="text-white bg-black antialiased font-sans">
+<body class="antialiased text-white bg-black font-geometria-narrow">
     <div id="app">
         <app></app>
     </div>

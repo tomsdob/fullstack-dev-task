@@ -22,24 +22,26 @@ const medias = ref([
 </script>
 
 <template>
-    <section class="px-4 pb-[60px] sm:pb-[93px]">
+    <section class="px-4 pb-[60px] md:pb-[93px]">
         <div class="mx-auto max-w-[1140px]">
             <h2
-                class="mb-[30px] sm:mb-10 text-[32px] font-bold text-center text-white sm:text-left"
+                class="mb-[30px] md:mb-10 text-[32px] font-bold text-center text-white md:text-left"
             >
                 Īpašs piedāvājums tikai piektdien!
             </h2>
             <div
-                class="items-center grid grid-cols-1 sm:grid-cols-3 gap-[36px] sm:gap-[80px] sm:mb-[36px] w-full bg-brand-gray/50 rounded-[5px] px-[19px] sm:px-[70px] py-[28px] sm:py-[35px]"
+                class="items-center grid grid-cols-1 xl:grid-cols-5 gap-[36px] md:gap-[80px] md:mb-[36px] w-full bg-brand-gray/50 rounded-[5px] px-[19px] md:px-[70px] py-[28px] md:py-[35px]"
             >
-                <div class="flex flex-col items-start justify-center">
+                <div
+                    class="flex flex-col items-start justify-center col-span-1 xl:col-span-2"
+                >
                     <p
-                        class="mb-[14px] sm:mb-1.5 text-[24px] leading-[34px] font-bold text-white text-center"
+                        class="w-full mb-[14px] md:mb-1.5 text-[24px] leading-[34px] font-bold text-white text-center"
                     >
                         LMT Viedtelevīzija + HBO filmas un seriāli
                     </p>
                     <div
-                        class="w-full mb-[12px] sm:mb-[14px] flex justify-center"
+                        class="w-full mb-[12px] md:mb-[14px] flex justify-center"
                     >
                         <img
                             class="max-w-full"
@@ -51,7 +53,7 @@ const medias = ref([
                     <div class="flex items-center justify-between w-full">
                         <div class="mr-8">
                             <p
-                                class="mb-2 sm:mb-2.5 leading-none text-brand-dark-gray"
+                                class="mb-2 md:mb-2.5 leading-none text-brand-dark-gray"
                             >
                                 Iepriekš 24,99€/mēn
                             </p>
@@ -65,14 +67,14 @@ const medias = ref([
                                     </sup>
                                 </span>
                                 <span
-                                    class="absolute bottom-[6px] right-[-18px] font-medium leading-none transform -translate-x-1/2"
+                                    class="absolute bottom-[6px] right-[-6px] font-medium leading-none transform -translate-x-1/2"
                                 >
                                     €/mēn.*
                                 </span>
                             </div>
                         </div>
                         <a
-                            class="px-4 sm:px-5 py-2.5 sm:py-[18px] border hover:bg-brand-red hover:text-white transition duration-200 border-brand-red rounded-[5px] flex items-center text-brand-red"
+                            class="self-end mb-2 px-4 py-[11px] border hover:bg-brand-red hover:text-white transition duration-200 border-brand-red rounded-[5px] flex items-center text-brand-red"
                             href="#"
                             title="Vairāk"
                         >
@@ -95,12 +97,12 @@ const medias = ref([
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-3 sm:grid-cols-4 col-span-1 sm:col-span-2 gap-2.5 sm:gap-3"
+                    class="grid grid-cols-3 md:grid-cols-4 col-span-1 xl:col-span-3 gap-2.5 md:gap-3"
                 >
                     <a
                         v-for="(media, index) in medias"
-                        class="h-[132px] sm:h-[200px] w-full rounded-[5px]"
-                        :class="{ 'hidden sm:block': index > 2 }"
+                        class="h-[132px] md:h-[200px] w-full rounded-[5px]"
+                        :class="{ 'hidden md:block': index > 2 }"
                         href="#"
                         :title="media.name"
                     >
@@ -113,7 +115,7 @@ const medias = ref([
                 </div>
             </div>
             <p
-                class="hidden text-lg leading-none text-brand-light-gray/50 sm:block"
+                class="hidden text-lg leading-none text-brand-light-gray/50 md:block"
             >
                 Akcija 29.11.2019. Piedāvājums attiecas uz noteiktām preču
                 kategorijām. Piedāvājums neattiecas uz citu akciju precēm.

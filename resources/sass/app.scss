@@ -1,3 +1,125 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Geometria Narrow";
+    src: url("/fonts/geometria-narrow/Geometria-NarrowThin.eot");
+    src: local("Geometria Narrow Thin"), local("Geometria-NarrowThin"),
+        url("/fonts/geometria-narrow/Geometria-NarrowThin.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/geometria-narrow/Geometria-NarrowThin.woff2")
+            format("woff2"),
+        url("/fonts/geometria-narrow/Geometria-NarrowThin.woff") format("woff"),
+        url("/fonts/geometria-narrow/Geometria-NarrowThin.ttf")
+            format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria Narrow";
+    src: url("/fonts/geometria-narrow/Geometria-NarrowExtraLight.eot");
+    src: local("Geometria Narrow ExtraLight"),
+        local("Geometria-NarrowExtraLight"),
+        url("/fonts/geometria-narrow/Geometria-NarrowExtraLight.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/geometria-narrow/Geometria-NarrowExtraLight.woff2")
+            format("woff2"),
+        url("/fonts/geometria-narrow/Geometria-NarrowExtraLight.woff")
+            format("woff"),
+        url("/fonts/geometria-narrow/Geometria-NarrowExtraLight.ttf")
+            format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria Narrow";
+    src: url("/fonts/geometria-narrow/Geometria-NarrowLight.eot");
+    src: local("Geometria Narrow Light"), local("Geometria-NarrowLight"),
+        url("/fonts/geometria-narrow/Geometria-NarrowLight.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/geometria-narrow/Geometria-NarrowLight.woff2")
+            format("woff2"),
+        url("/fonts/geometria-narrow/Geometria-NarrowLight.woff") format("woff"),
+        url("/fonts/geometria-narrow/Geometria-NarrowLight.ttf")
+            format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria Narrow";
+    src: url("/fonts/geometria-narrow/Geometria-Narrow.eot");
+    src: local("Geometria Narrow"), local("Geometria-Narrow"),
+        url("/fonts/geometria-narrow/Geometria-Narrow.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/geometria-narrow/Geometria-Narrow.woff2") format("woff2"),
+        url("/fonts/geometria-narrow/Geometria-Narrow.woff") format("woff"),
+        url("/fonts/geometria-narrow/Geometria-Narrow.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria Narrow";
+    src: url("/fonts/geometria-narrow/Geometria-NarrowMedium.eot");
+    src: local("Geometria Narrow Medium"), local("Geometria-NarrowMedium"),
+        url("/fonts/geometria-narrow/Geometria-NarrowMedium.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/geometria-narrow/Geometria-NarrowMedium.woff2")
+            format("woff2"),
+        url("/fonts/geometria-narrow/Geometria-NarrowMedium.woff")
+            format("woff"),
+        url("/fonts/geometria-narrow/Geometria-NarrowMedium.ttf")
+            format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria Narrow";
+    src: url("/fonts/geometria-narrow/Geometria-NarrowBold.eot");
+    src: local("Geometria Narrow Bold"), local("Geometria-NarrowBold"),
+        url("/fonts/geometria-narrow/Geometria-NarrowBold.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/geometria-narrow/Geometria-NarrowBold.woff2")
+            format("woff2"),
+        url("/fonts/geometria-narrow/Geometria-NarrowBold.woff") format("woff"),
+        url("/fonts/geometria-narrow/Geometria-NarrowBold.ttf")
+            format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria Narrow";
+    src: url("/fonts/geometria-narrow/Geometria-NarrowExtraBold.eot");
+    src: local("Geometria Narrow ExtraBold"), local("Geometria-NarrowExtraBold"),
+        url("/fonts/geometria-narrow/Geometria-NarrowExtraBold.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/geometria-narrow/Geometria-NarrowExtraBold.woff2")
+            format("woff2"),
+        url("/fonts/geometria-narrow/Geometria-NarrowExtraBold.woff")
+            format("woff"),
+        url("/fonts/geometria-narrow/Geometria-NarrowExtraBold.ttf")
+            format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria Narrow";
+    src: url("/fonts/geometria-narrow/Geometria-NarrowHeavy.eot");
+    src: local("Geometria Narrow Heavy"), local("Geometria-NarrowHeavy"),
+        url("/fonts/geometria-narrow/Geometria-NarrowHeavy.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/geometria-narrow/Geometria-NarrowHeavy.woff2")
+            format("woff2"),
+        url("/fonts/geometria-narrow/Geometria-NarrowHeavy.woff") format("woff"),
+        url("/fonts/geometria-narrow/Geometria-NarrowHeavy.ttf")
+            format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}

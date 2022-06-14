@@ -46,10 +46,10 @@ async function submitForm() {
 </script>
 
 <template>
-    <section class="px-4 bg-white pt-10 sm:pt-[70px] pb-[77px] sm:pb-[164px]">
+    <section class="px-4 bg-white pt-10 md:pt-[70px] pb-[77px] md:pb-[164px]">
         <div class="max-w-[1140px] mx-auto">
             <h3
-                class="text-[32px] sm:text-4xl font-bold text-brand-gray mb-[39px] sm:mb-[70px]"
+                class="text-[32px] md:text-4xl font-bold text-brand-gray mb-[39px] md:mb-[70px]"
             >
                 Pieteikties konkursam!
             </h3>
@@ -75,11 +75,11 @@ async function submitForm() {
                 </ul>
             </div>
             <form
-                class="flex sm:-mx-2.5 sm:items-end sm:flex-row flex-col"
+                class="flex md:-mx-2.5 md:items-end md:flex-row flex-col"
                 method="POST"
                 @submit.prevent="submitForm()"
             >
-                <div class="sm:mx-2.5 mb-[30px] sm:mb-0">
+                <div class="md:mx-2.5 mb-[30px] md:mb-0">
                     <label
                         class="block mb-2 text-sm leading-none text-brand-medium-gray"
                         for="name"
@@ -87,7 +87,7 @@ async function submitForm() {
                         Vārds, uzvārds
                     </label>
                     <input
-                        class="w-full sm:w-auto px-6 py-5 leading-none rounded-[5px] text-brand-medium-gray bg-brand-light-gray border-brand-light-normal-gray border"
+                        class="w-full md:w-auto px-6 py-[17px] leading-none rounded-[5px] text-brand-medium-gray bg-brand-light-gray border-brand-light-normal-gray border"
                         type="text"
                         placeholder="Vārds, uzvārds"
                         required
@@ -96,7 +96,7 @@ async function submitForm() {
                         v-model="application.name"
                     />
                 </div>
-                <div class="sm:mx-2.5 mb-[40px] sm:mb-0">
+                <div class="md:mx-2.5 mb-[40px] md:mb-0">
                     <label
                         class="block mb-2 text-sm leading-none text-brand-medium-gray"
                         for="name"
@@ -104,7 +104,7 @@ async function submitForm() {
                         E-pasta adrese
                     </label>
                     <input
-                        class="w-full sm:w-auto px-6 py-5 leading-none rounded-[5px] text-brand-medium-gray bg-brand-light-gray border-brand-light-normal-gray border"
+                        class="w-full md:w-auto px-6 py-[17px] leading-none rounded-[5px] text-brand-medium-gray bg-brand-light-gray border-brand-light-normal-gray border"
                         type="email"
                         placeholder="E-pasta adrese"
                         required
@@ -114,7 +114,7 @@ async function submitForm() {
                     />
                 </div>
                 <button
-                    class="bg-brand-red sm:mx-2.5 flex items-center justify-center sm:justify-start text-white rounded-[5px] px-8 py-[18px]"
+                    class="bg-brand-red md:mx-2.5 flex items-center justify-center md:justify-start text-white rounded-[5px] px-8 py-[16px]"
                 >
                     Nosūtīt
                     <svg
