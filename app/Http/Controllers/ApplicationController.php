@@ -21,6 +21,6 @@ class ApplicationController extends Controller
 
         return Response::json([
             'message' => 'Application successfully submitted!',
-        ]);
+        ], 201);
     }
 }

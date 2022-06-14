@@ -8,3 +8,9 @@ mix.js("resources/js/app.js", "public/js")
         postCss: [tailwindcss("./tailwind.config.js")],
     })
     .version();
+
+mix.browserSync({
+    proxy: "localhost",
+    open: false,
+    notify: false,
+}).disableNotifications();

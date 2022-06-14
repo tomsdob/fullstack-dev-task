@@ -3,12 +3,12 @@ import axios from "axios";
 import { ref } from "vue";
 
 const application = ref({
-    name: "testtest test test test test",
-    email: "test@test",
+    name: "",
+    email: "",
 });
 
 const notification = ref({
-    message: [],
+    messages: [],
     type: "",
 });
 
@@ -23,23 +23,23 @@ async function submitForm() {
                 email: "",
             };
 
-            notification.value.message = [];
+            notification.value.messages = [];
             notification.value.type = "success";
-            notification.value.message.push(response.data.message);
+            notification.value.messages.push(response.data.message);
         })
         .catch((error) => {
             notification.value.type = "error";
 
             if (error.response.status === 500) {
-                notification.value.message.push("Server error");
+                notification.value.messages.push("Server error");
                 return;
             }
 
             const errorMessages = Object.values(error.response.data.errors);
 
-            notification.value.message = [];
+            notification.value.messages = [];
             errorMessages.map((errorMessage) => {
-                notification.value.message.push(errorMessage[0]);
+                notification.value.messages.push(errorMessage[0]);
             });
         });
 }
@@ -55,7 +55,7 @@ async function submitForm() {
             </h3>
             <div
                 class="mb-[30px] inline-flex border rounded-[5px] px-5 py-4"
-                v-if="notification.message.length > 0"
+                v-if="notification.messages.length > 0"
                 :class="{
                     'border-green-600 bg-green-200 text-green-600':
                         notification.type === 'success',
@@ -63,12 +63,12 @@ async function submitForm() {
                         notification.type === 'error',
                 }"
             >
-                <ul :class="{ 'pl-4': notification.message.length > 1 }">
+                <ul :class="{ 'pl-4': notification.messages.length > 1 }">
                     <li
                         :class="{
-                            'list-disc': notification.message.length > 1,
+                            'list-disc': notification.messages.length > 1,
                         }"
-                        v-for="message in notification.message"
+                        v-for="message in notification.messages"
                     >
                         {{ message }}
                     </li>
@@ -91,6 +91,8 @@ async function submitForm() {
                         type="text"
                         placeholder="Vārds, uzvārds"
                         required
+                        maxlength="255"
+                        minlength="0"
                         v-model="application.name"
                     />
                 </div>
@@ -106,6 +108,8 @@ async function submitForm() {
                         type="email"
                         placeholder="E-pasta adrese"
                         required
+                        maxlength="255"
+                        minlength="0"
                         v-model="application.email"
                     />
                 </div>

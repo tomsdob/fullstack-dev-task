@@ -20,13 +20,13 @@ class StoreApplicationRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string>
+     * @return array<string, array<mixed>>
      */
     public function rules()
     {
         return [
             'name' => ['required', 'string', 'max:255', new MaxWordCount(4)],
-            'email' => ['required', 'email', 'unique:applications', 'max:255']
+            'email' => ['required', 'email', 'unique:applications', 'max:255'],
         ];
     }
 }

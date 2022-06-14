@@ -20160,11 +20160,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     var expose = _ref.expose;
     expose();
     var application = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)({
-      name: "testtest test test test test",
-      email: "test@test"
+      name: "",
+      email: ""
     });
     var notification = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)({
-      message: [],
+      messages: [],
       type: ""
     });
     var API_URL = "/api/v1/application";
@@ -20185,21 +20185,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     name: "",
                     email: ""
                   };
-                  notification.value.message = [];
+                  notification.value.messages = [];
                   notification.value.type = "success";
-                  notification.value.message.push(response.data.message);
+                  notification.value.messages.push(response.data.message);
                 })["catch"](function (error) {
                   notification.value.type = "error";
 
                   if (error.response.status === 500) {
-                    notification.value.message.push("Server error");
+                    notification.value.messages.push("Server error");
                     return;
                   }
 
                   var errorMessages = Object.values(error.response.data.errors);
-                  notification.value.message = [];
+                  notification.value.messages = [];
                   errorMessages.map(function (errorMessage) {
-                    notification.value.message.push(errorMessage[0]);
+                    notification.value.messages.push(errorMessage[0]);
                   });
                 });
 
@@ -20730,7 +20730,7 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, $setup.notification.message.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, $setup.notification.messages.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
     key: 0,
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["mb-[30px] inline-flex border rounded-[5px] px-5 py-4", {
       'border-green-600 bg-green-200 text-green-600': $setup.notification.type === 'success',
@@ -20738,12 +20738,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)({
-      'pl-4': $setup.notification.message.length > 1
+      'pl-4': $setup.notification.messages.length > 1
     })
-  }, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.notification.message, function (message) {
+  }, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.notification.messages, function (message) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)({
-        'list-disc': $setup.notification.message.length > 1
+        'list-disc': $setup.notification.messages.length > 1
       })
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(message), 3
     /* TEXT, CLASS */
@@ -20765,6 +20765,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     type: "text",
     placeholder: "Vārds, uzvārds",
     required: "",
+    maxlength: "255",
+    minlength: "0",
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return $setup.application.name = $event;
     })
@@ -20775,6 +20777,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     type: "email",
     placeholder: "E-pasta adrese",
     required: "",
+    maxlength: "255",
+    minlength: "0",
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return $setup.application.email = $event;
     })

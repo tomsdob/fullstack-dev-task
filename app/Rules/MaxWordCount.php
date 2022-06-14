@@ -7,7 +7,7 @@ use Illuminate\Contracts\Validation\Rule;
 class MaxWordCount implements Rule
 {
     /**
-     * Attribute.
+     * Validation attribute name.
      *
      * @var string
      */
@@ -16,7 +16,7 @@ class MaxWordCount implements Rule
     /**
      * Expected amount of words.
      *
-     * @var string
+     * @var int
      */
     private $expectedWordAmount;
 
@@ -41,7 +41,7 @@ class MaxWordCount implements Rule
     {
         $this->attribute = $attribute;
         $trimmedString = trim($value);
-        $wordCount = count(explode(' ',  $trimmedString));
+        $wordCount = count(explode(' ', $trimmedString));
 
         return $wordCount <= $this->expectedWordAmount;
     }
